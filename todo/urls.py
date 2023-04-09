@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     path('testing/', views.testing, name='testing'),
+    path('testing/test', views.testing, name='testing'),
     path("",views.ListTodoAPIView.as_view(),name="todo_list"),
     path("create/", views.CreateTodoAPIView.as_view(),name="todo_create"),
     path("update/<int:pk>/",views.UpdateTodoAPIView.as_view(),name="update_todo"),
