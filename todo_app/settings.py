@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'todo',
     'rest_framework',
 ]
-CSRF_TRUSTED_ORIGINS=['*']
+CSRF_TRUSTED_ORIGINS = ['https://django-class-production.up.railway.app/']
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
